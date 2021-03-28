@@ -99,16 +99,16 @@ public class MainActivity extends AppCompatActivity {
 
     private String cambiarNumAr(char num) {
         switch (num){
-            case 1:getResources().getString(R.string.uno);break;
-            case 2:getResources().getString(R.string.dos);break;
-            case 3:getResources().getString(R.string.tres);break;
-            case 4:getResources().getString(R.string.cuatro);break;
-            case 5:getResources().getString(R.string.cinco);break;
-            case 6:getResources().getString(R.string.seis);break;
-            case 7:getResources().getString(R.string.siete);break;
-            case 8:getResources().getString(R.string.ocho);break;
-            case 9:getResources().getString(R.string.nueve);break;
-            case 0: getResources().getString(R.string.cero);break;
+            case '1': return getResources().getString(R.string.uno);
+            case '2':return getResources().getString(R.string.dos);
+            case '3':return getResources().getString(R.string.tres);
+            case '4':return getResources().getString(R.string.cuatro);
+            case '5':return getResources().getString(R.string.cinco);
+            case '6':return getResources().getString(R.string.seis);
+            case '7':return getResources().getString(R.string.siete);
+            case '8':return getResources().getString(R.string.ocho);
+            case '9':return getResources().getString(R.string.nueve);
+            case '0': return getResources().getString(R.string.cero);
         }
         return null;
     }
