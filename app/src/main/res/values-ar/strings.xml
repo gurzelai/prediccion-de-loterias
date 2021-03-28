@@ -17,4 +17,13 @@
     <string name="pais_loteria">البلد الذي يقام فيه اليانصيب</string>
     <string name="ok">حسنا</string>
     <string name="aviso_inicial">للحصول على أفضل النتائج أجب على جميع الأسئلة</string>
+    <string name="uno">واحد</string>
+    <string name="dos">إثنان</string>
+    <string name="tres">ثلاثة</string>
+    <string name="cuatro">أربعة</string>
+    <string name="cinco">خمسة</string>
+    <string name="seis">ستة</string>
+    <string name="siete">سبعة</string>
+    <string name="ocho">ثمانية</string>
+    <string name="nueve">تسعة</string>
 </resources>

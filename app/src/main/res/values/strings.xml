@@ -16,4 +16,14 @@
     <string name="pais_loteria">País en el que se hace la lotería</string>
     <string name="ok">OK</string>
     <string name="aviso_inicial">Para un mejor resultado responda todas las preguntas</string>
+    <string name="uno">1</string>
+    <string name="dos">2</string>
+    <string name="tres">3</string>
+    <string name="cuatro">4</string>
+    <string name="cinco">5</string>
+    <string name="seis">6</string>
+    <string name="siete">7</string>
+    <string name="ocho">8</string>
+    <string name="nueve">9</string>
+    <string name="cero">0</string>
 </resources>

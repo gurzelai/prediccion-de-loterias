@@ -23,6 +23,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Random;
 import java.util.function.BinaryOperator;
 
@@ -81,8 +82,35 @@ public class MainActivity extends AppCompatActivity {
                 resultado = resultado + (r.nextInt(9));
             }
         }
-
+        if (Locale.getDefault().getLanguage().equals("ar")){
+            resultado = traducirResultadoAArabe(resultado);
+        }
         tvNumero.setText(resultado);
+    }
+
+    private String traducirResultadoAArabe(String resultado) {
+        char[] aCaracteres = resultado.toCharArray();
+        resultado= "";
+        for(int i = 0; i<aCaracteres.length; i++){
+            resultado = resultado + cambiarNumAr(aCaracteres[i]);
+        }
+        return resultado;
+    }
+
+    private String cambiarNumAr(char num) {
+        switch (num){
+            case 1:getResources().getString(R.string.uno);break;
+            case 2:getResources().getString(R.string.dos);break;
+            case 3:getResources().getString(R.string.tres);break;
+            case 4:getResources().getString(R.string.cuatro);break;
+            case 5:getResources().getString(R.string.cinco);break;
+            case 6:getResources().getString(R.string.seis);break;
+            case 7:getResources().getString(R.string.siete);break;
+            case 8:getResources().getString(R.string.ocho);break;
+            case 9:getResources().getString(R.string.nueve);break;
+            case 0: getResources().getString(R.string.cero);break;
+        }
+        return null;
     }
 
     private void dialogoResultado() {
