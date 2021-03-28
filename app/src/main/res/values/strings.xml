@@ -2,7 +2,7 @@
     <string name="app_name">Predicción de loterías</string>
     <string name="nuevo_numero">NUEVA LOTERÍA</string>
     <string name="cancelar">Cancelar</string>
-    <string name="resolviendo">Resolviendo...</string>
+    <string name="resolviendo">Resolviendo…</string>
     <string name="nombre">Nombre</string>
     <string name="pasar">PASAR</string>
     <string name="apellido">Apellido</string>

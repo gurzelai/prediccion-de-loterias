@@ -3,7 +3,7 @@
     <string name="app_name">Lottery prediction</string>
     <string name="nuevo_numero">NEW LOTTERY</string>
     <string name="cancelar">Cancel</string>
-    <string name="resolviendo">Solving...</string>
+    <string name="resolviendo">Solving…</string>
     <string name="nombre">Name</string>
     <string name="pasar">PASS</string>
     <string name="apellido">Last name</string>
