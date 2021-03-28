@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Predicción de lotería</string>
+    <string name="app_name">Predicción de loterías</string>
     <string name="nuevo_numero">NUEVA LOTERÍA</string>
     <string name="cancelar">Cancelar</string>
     <string name="resolviendo">Resolviendo...</string>
