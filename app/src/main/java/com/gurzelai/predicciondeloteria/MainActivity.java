@@ -115,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
                 if (obligatoria && input.getText().length() == 0) {
                     pregunta(titulo, inputType, obligatoria, id);
                 } else {
-                    if (titulo.equals(R.string.cantidad_de_numeros)) {
+                    if (titulo.equals(getResources().getString(R.string.cantidad_de_numeros))) {
                         cantNumeros = Integer.valueOf(input.getText().toString());
                     }
                     siguientePregunta(id);

@@ -8,7 +8,7 @@
     <string name="apellido">Apellido</string>
     <string name="año_nacimiento">Año nacimiento</string>
     <string name="mes_nacimiento">Mes nacimiento</string>
-    <string name="dia_nacimiento">Dia nacimiento</string>
+    <string name="dia_nacimiento">Día nacimiento</string>
     <string name="numero_de_hijos">Número de hijos</string>
     <string name="color_favorito">Color favorito</string>
     <string name="pais_de_residencia">País de residencía</string>
