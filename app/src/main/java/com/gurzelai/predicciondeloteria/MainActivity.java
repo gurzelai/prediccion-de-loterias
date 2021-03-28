@@ -107,11 +107,6 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle(((obligatoria) ? titulo + " *" : titulo));
         final EditText input = new EditText(this);
-        input.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View v, boolean hasFocus) {
-            }
-        });
         input.setInputType(inputType);
         builder.setView(input);
         builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
