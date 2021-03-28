@@ -16,4 +16,5 @@
     <string name="cantidad_de_numeros">Number of numbers</string>
     <string name="pais_loteria">Country where the lottery is held</string>
     <string name="ok">OK</string>
+    <string name="aviso_inicial">For best results answer all questions</string>
 </resources>

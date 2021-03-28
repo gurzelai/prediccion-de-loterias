@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity {
     public void nuevo() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);
-        builder.setTitle("Para un mejor resultado responda todas las preguntas");
-        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+        builder.setTitle(R.string.aviso_inicial);
+        builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 empezarPreguntas();

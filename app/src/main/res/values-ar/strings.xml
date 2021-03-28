@@ -16,4 +16,5 @@
     <string name="cantidad_de_numeros">عدد الأرقام</string>
     <string name="pais_loteria">البلد الذي يقام فيه اليانصيب</string>
     <string name="ok">حسنا</string>
+    <string name="aviso_inicial">للحصول على أفضل النتائج أجب على جميع الأسئلة</string>
 </resources>
