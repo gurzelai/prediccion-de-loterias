@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 empezarPreguntas();
             }
         });
-        builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton(R.string.cancelar, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void dialogoResultado() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Resolviendo...");
+        builder.setTitle(R.string.resolviendo);
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private void empezarPreguntas() {
-        pregunta("Nombre", InputType.TYPE_TEXT_VARIATION_PERSON_NAME | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES, false, 1);
+        pregunta(getString(R.string.nombre), InputType.TYPE_TEXT_VARIATION_PERSON_NAME | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES, false, 1);
     }
 
     public void pregunta(String titulo, int inputType, boolean obligatoria, int id) {
@@ -114,13 +114,13 @@ public class MainActivity extends AppCompatActivity {
         });
         input.setInputType(inputType);
         builder.setView(input);
-        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 if (obligatoria && input.getText().length() == 0) {
                     pregunta(titulo, inputType, obligatoria, id);
                 } else {
-                    if (titulo.equals("Boleto de cuantos numeros")) {
+                    if (titulo.equals(R.string.cantidad_de_numeros)) {
                         cantNumeros = Integer.valueOf(input.getText().toString());
                     }
                     siguientePregunta(id);
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         if (!obligatoria) {
-            builder.setNegativeButton("PASAR", new DialogInterface.OnClickListener() {
+            builder.setNegativeButton(R.string.pasar, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     siguientePregunta(id);
@@ -141,31 +141,31 @@ public class MainActivity extends AppCompatActivity {
     private void siguientePregunta(int id) {
         switch (id) {
             case 1:
-                pregunta("Apellido", InputType.TYPE_TEXT_VARIATION_PERSON_NAME | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES, false, 2);
+                pregunta(getString(R.string.apellido), InputType.TYPE_TEXT_VARIATION_PERSON_NAME | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES, false, 2);
                 break;
             case 2:
-                pregunta("Año nacimiento", InputType.TYPE_CLASS_NUMBER, false, 3);
+                pregunta(getString(R.string.año_nacimiento), InputType.TYPE_CLASS_NUMBER, false, 3);
                 break;
             case 3:
-                pregunta("Mes nacimiento", InputType.TYPE_CLASS_NUMBER, false, 4);
+                pregunta(getString(R.string.mes_nacimiento), InputType.TYPE_CLASS_NUMBER, false, 4);
                 break;
             case 4:
-                pregunta("Dia nacimiento", InputType.TYPE_CLASS_NUMBER, false, 5);
+                pregunta(getString(R.string.dia_nacimiento), InputType.TYPE_CLASS_NUMBER, false, 5);
                 break;
             case 5:
-                pregunta("Numero de hijos", InputType.TYPE_CLASS_NUMBER, false, 6);
+                pregunta(getString(R.string.numero_de_hijos), InputType.TYPE_CLASS_NUMBER, false, 6);
                 break;
             case 6:
-                pregunta("Color favorito", InputType.TYPE_TEXT_VARIATION_PERSON_NAME | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES, false, 7);
+                pregunta(getString(R.string.color_favorito), InputType.TYPE_TEXT_VARIATION_PERSON_NAME | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES, false, 7);
                 break;
             case 7:
-                pregunta("País de residencía", InputType.TYPE_TEXT_VARIATION_PERSON_NAME | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES, false, 8);
+                pregunta(getString(R.string.pais_de_residencia), InputType.TYPE_TEXT_VARIATION_PERSON_NAME | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES, false, 8);
                 break;
             case 8:
-                pregunta("País en el que se hace la lotería", InputType.TYPE_TEXT_VARIATION_PERSON_NAME | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES, false, 9);
+                pregunta(getString(R.string.pais_loteria), InputType.TYPE_TEXT_VARIATION_PERSON_NAME | InputType.TYPE_TEXT_FLAG_CAP_SENTENCES, false, 9);
                 break;
             case 9:
-                pregunta("Boleto de cuantos numeros", InputType.TYPE_CLASS_NUMBER, true, 0);
+                pregunta(getString(R.string.cantidad_de_numeros), InputType.TYPE_CLASS_NUMBER, true, 0);
                 break;
             case 0:
                 resultado();

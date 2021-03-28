@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">توقع اليانصيب</string>
+    <string name="nuevo_numero">يانصيب جديد</string>
+    <string name="cancelar">يلغي</string>
+    <string name="resolviendo">حل ...</string>
+    <string name="apellido">اسم العائلة</string>
+    <string name="nombre">اسم</string>
+    <string name="pasar">يمر</string>
+    <string name="año_nacimiento">سنة الولادة</string>
+    <string name="mes_nacimiento">شهر الميلاد</string>
+    <string name="dia_nacimiento">يوم الميلاد</string>
+    <string name="numero_de_hijos">عدد الاطفال</string>
+    <string name="color_favorito">اللون المفضل</string>
+    <string name="pais_de_residencia">بلد الإقامة</string>
+    <string name="cantidad_de_numeros">عدد الأرقام</string>
+    <string name="pais_loteria">البلد الذي يقام فيه اليانصيب</string>
+    <string name="ok">حسنا</string>
+</resources>

@@ -26,7 +26,7 @@
         android:layout_marginBottom="45sp"
         android:backgroundTint="@color/black"
         android:fontFamily="@font/aclonica"
-        android:text="NUEVO NUMERO"
+        android:text="@string/nuevo_numero"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

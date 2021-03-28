@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lottery prediction</string>
+    <string name="nuevo_numero">NEW LOTTERY</string>
+    <string name="cancelar">Cancel</string>
+    <string name="resolviendo">Solving...</string>
+    <string name="nombre">Name</string>
+    <string name="pasar">PASS</string>
+    <string name="apellido">Last name</string>
+    <string name="año_nacimiento">Year of birth</string>
+    <string name="mes_nacimiento">Month of birth</string>
+    <string name="dia_nacimiento">Day of birth</string>
+    <string name="numero_de_hijos">Number of children</string>
+    <string name="color_favorito">Favorite color</string>
+    <string name="pais_de_residencia">Country of residence</string>
+    <string name="cantidad_de_numeros">Number of numbers</string>
+    <string name="pais_loteria">Country where the lottery is held</string>
+    <string name="ok">OK</string>
+</resources>
